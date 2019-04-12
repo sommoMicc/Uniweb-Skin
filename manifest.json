@@ -4,7 +4,9 @@
   "name": "Uniweb Skin",
   "version": "0.1.0",
   "description": "Skin per uniweb",
-
+  "icons": {
+    "128": "assets/icona_uniweb_skin.png" 
+  },
   "content_scripts": [{
     "css": ["css/styles.css"],
     "js": ["js/jquery.js","js/content.js"],
