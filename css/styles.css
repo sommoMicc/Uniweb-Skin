@@ -19,6 +19,10 @@
     max-width: 1200px;
     margin: auto;
   }
+
+  nav.masthead_menu {
+    box-shadow: none!important;
+  }
 }
 
 /* Cambio l'orribile grafica delle tabelle */
@@ -94,4 +98,7 @@ ul.masthead_menu_lang a:not(.is-active) {
 }
 .masthead_menu_body > ul > li.has-children li > a {
   margin-left: 2em;
+}
+a#chiudi-menu-principale.masthead_menu_close {
+  color: black;
 }
