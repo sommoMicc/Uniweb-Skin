@@ -1,11 +1,19 @@
 $(document).ready(()=>{
-  //Apro il menu
-  $("#main-navigation").addClass("is-open");
   //Rimuovo l'inutile popup dell'informativa cookies
   $("div#cookies").remove();
-  /*
-  $("ul.notOpened").each((ul)=>{
-    $(ul).removeClass("notOpened");
-    $(ul).addClass("is-open");
-  });*/
+  $(window).resize(function() {
+    editInterface($(window).width());
+  });
+  editInterface($(window).width());
 });
+
+function editInterface(windowSize) {
+  if(windowSize >= 870) {
+    //Apro il menu di navigazione
+    $("#main-navigation").addClass("is-open");
+  }
+  else {
+    $("#main-navigation").removeClass("is-open")
+  }
+}
+

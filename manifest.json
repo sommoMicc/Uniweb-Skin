@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Modify CSS and HTML",
+  "name": "Uniweb Skin",
   "version": "0.1.0",
-  "description": "Lateral blog post demo extension",
+  "description": "Skin per uniweb",
 
   "content_scripts": [{
     "css": ["css/styles.css"],
