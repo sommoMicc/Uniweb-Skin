@@ -16,7 +16,7 @@
 
   /* Centro la parte centrale della pagina */
   section.l-content-container > div.l-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
   }
 
@@ -30,4 +30,22 @@
     width: 14px;
     height: 14px;
   }
+}
+
+/* Cambio l'orribile grafica delle tabelle */
+#esse3 .table-1 {
+  border: solid 1px silver !important;
+}
+#esse3 .table-1 td,
+#esse3 .table-1 th {
+  border: none!important;
+}
+#esse3 .table-1 th {
+  padding-bottom: 10px!important;
+}
+#esse3 .table-1 tr:nth-child(even) td {
+  background: #eee;
+}
+#esse3 .table-1 tr:nth-child(odd) td {
+  background: #fff;
 }
