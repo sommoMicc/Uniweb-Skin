@@ -1,3 +1,3 @@
-# Create a Chrome extension to modify a website's HTML or CSS
-
-See post: https://blog.lateral.io/2016/04/create-chrome-extension-modify-websites-html-css/
+# Uniweb Skin
+Skin per uniweb.
+Disponibile al link https://chrome.google.com/webstore/detail/uniweb-skin/geknnfgemiadpooaaandcnlpblkmaild
