@@ -19,33 +19,79 @@
     max-width: 1200px;
     margin: auto;
   }
-
-  /* Coloro differentemente i sottomenù */
-  li.has-children > ul.is-open {
-    background: #666666;
-    padding-left: 10px
-  }
-
-  #main-navigation::-webkit-scrollbar {
-    width: 14px;
-    height: 14px;
-  }
 }
 
 /* Cambio l'orribile grafica delle tabelle */
-#esse3 .table-1 {
+#esse3 .table-1,
+table.detail_table {
   border: solid 1px silver !important;
 }
 #esse3 .table-1 td,
-#esse3 .table-1 th {
+#esse3 .table-1 th,
+table.detail_table td,
+table.detail_table th {
   border: none!important;
 }
+table.detail_table th,
 #esse3 .table-1 th {
   padding-bottom: 10px!important;
 }
+table.detail_table tr:nth-child(even) td,
 #esse3 .table-1 tr:nth-child(even) td {
   background: #eee;
 }
+table.detail_table tr:nth-child(odd) td,
 #esse3 .table-1 tr:nth-child(odd) td {
   background: #fff;
+}
+
+/* 
+ * Menù
+*/
+/* Sposto il bordo rosso del menu dal <li> all'<a> figlio */
+div.masthead_menu_body > ul > li {
+  border-left: none;
+  border-color: none;
+  margin-left: none;
+  padding-left: 0!important;
+  padding-right: 8px!important;
+  margin-right: 0!important;
+}
+div.masthead_menu_body > ul > li > a,
+div.masthead_menu_body > ul > li.has-children > a {
+  border-left: 8px solid #9C0014;
+  padding-left: 8px;
+  padding-right: 0;
+  margin-right: none!important;
+}
+div.masthead_menu_body > ul > li > a:hover {
+  background: #dddddd;
+}
+/* Coloro differentemente i sottomenù */
+li.has-children > ul.is-open {
+  background: white;
+  padding-left: 10px
+}
+/* Cambio il colore della pagina e poi del menu */
+body {
+  background: #F8F9FA;
+}
+nav.masthead_menu,
+div.masthead_usermenu,
+.masthead_menu_body > ul > li  {
+  background: white!important;
+}
+div.masthead_menu_body li a {
+  border: none;
+  color: #444;
+}
+ul.masthead_menu_lang a.is-active,
+div.masthead_menu_body ul > li.is-open > a {
+  color: black;
+}
+ul.masthead_menu_lang a:not(.is-active) {
+  color: #444;
+}
+.masthead_menu_body > ul > li.has-children li > a {
+  margin-left: 2em;
 }
