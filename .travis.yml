@@ -21,3 +21,5 @@ deploy:
   file: build/uniweb_skin-latest.xpi
   on:
     repo: sommoMicc/Uniweb-Skin
+
+    
