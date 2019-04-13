@@ -10,6 +10,7 @@ $(document).ready(()=>{
   editInterface($(window).width());
 
   addMaterialIcons();
+  checkIfLoginPossible();
 });
 
 function editInterface(windowSize) {
@@ -26,4 +27,17 @@ function addMaterialIcons() {
   $("div.alert-info").each(function() {
     $(this).prepend('<i class="material-icons">info</i>');
   })
+}
+
+function checkIfLoginPossible() {
+  let menuElements = $(".masthead_usermenu_menu").find("a");
+  let loginButtonFound = false;
+
+  for(let i=0;i<menuElements.length && !loginButtonFound;i++) {
+    let currentElement = $(menuElements[i]);
+    if(currentElement.text().trim().toLowerCase() === "login") {
+      loginButtonFound = true;
+      location.href = currentElement.attr("href");
+    }
+  }
 }
