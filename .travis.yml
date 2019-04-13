@@ -5,12 +5,10 @@ os:
 - linux
 
 node_js:
-- '8'
 - '10'
 
-install:
-- sudo apt install nodejs npm
-- sudo npm install -g web-ext
+before_script:
+- npm install -g web-ext
 
 script:
 - web-ext sign --api-key=$FIREFOX_API_KEY --api-secret=$FIREFOX_API_SECRET
