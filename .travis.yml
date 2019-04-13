@@ -6,9 +6,14 @@ node_js:
 - '10'
 before_script:
 - npm install -g web-ext
+  on:
+    tags: true
+    
 script:
 - rm -rf build/*
 - web-ext sign --api-key=$FIREFOX_API_KEY --api-secret=$FIREFOX_API_SECRET -a build/
+  on:
+    tags: true
 
 before_deploy:
   - mv build/uniweb*.xpi build/uniweb_skin-latest.xpi
