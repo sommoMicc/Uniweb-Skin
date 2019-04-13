@@ -4,7 +4,8 @@ os:
 - linux
 node_js:
 - '10'
-
+script:
+  - ls
 before_deploy:
   - npm install -g web-ext
   - rm -rf build/*
