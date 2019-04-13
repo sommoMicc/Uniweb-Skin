@@ -1,0 +1,25 @@
+language: node_js
+sudo: true
+os:
+- linux
+node_js:
+- '10'
+before_script:
+- npm install -g web-ext
+
+script:
+- rm -rf build/*
+- web-ext sign --api-key=$FIREFOX_API_KEY --api-secret=$FIREFOX_API_SECRET -a build/
+
+before_deploy:
+  - mv build/uniweb*.xpi build/uniweb_skin-latest.xpi
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+
+  on:
+    tags: true
+

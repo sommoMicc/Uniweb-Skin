@@ -1,0 +1,72 @@
+@media only screen and (min-width: 870px) {
+  /* Sposto il menù sulla destra */
+  #main-navigation {
+    left:0;
+    right: auto;
+  }
+  body, div#cookies {
+    margin-left: 300px!important;
+  }
+
+  /* Rimuovo i tasti per aprire e chiudere il menu */
+  a#hamburger,
+  a#chiudi-menu-principale {
+    display: none;
+  }
+
+  /* Centro la parte centrale della pagina */
+  section.l-content-container > div.l-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  nav.masthead_menu {
+    box-shadow: none!important;
+  }
+}
+
+/* Cambio l'orribile grafica delle tabelle */
+#esse3 .table-1,
+table.detail_table {
+  border: solid 1px !important;
+}
+#esse3 .table-1 td,
+#esse3 .table-1 th,
+table.detail_table td,
+table.detail_table th {
+  border: none!important;
+}
+table.detail_table th,
+#esse3 .table-1 th {
+  padding-bottom: 10px!important;
+}
+/* 
+ * Menù
+*/
+/* Sposto il bordo rosso del menu dal <li> all'<a> figlio */
+div.masthead_menu_body > ul > li {
+  border-left: none;
+  border-color: none;
+  margin-left: none;
+  padding-left: 0!important;
+  padding-right: 8px!important;
+  margin-right: 0!important;
+}
+div.masthead_menu_body > ul > li > a,
+div.masthead_menu_body > ul > li.has-children > a {
+  border-left: 8px solid;
+  padding-left: 8px;
+  padding-right: 0;
+  margin-right: none!important;
+}
+/* Coloro differentemente i sottomenù */
+li.has-children > ul.is-open {
+  padding-left: 10px
+}
+
+div.masthead_menu_body li a {
+  border: none;
+}
+.masthead_menu_body > ul > li.has-children li > a {
+  padding-left: 2em;
+}
