@@ -44,9 +44,20 @@ div.masthead_menu_body ul > li.is-open > a {
 ul.masthead_menu_lang a:not(.is-active) {
   color: #444;
 }
-.masthead_menu_body > ul > li.has-children li > a {
-  margin-left: 2em;
-}
 a#chiudi-menu-principale.masthead_menu_close {
   color: black;
+}
+
+/* Div di alert */
+main > #esse3 div.alert-info {
+    /** Per l'immagine di sfondo (la "i") guardare il javascript */
+    background-image: none;
+    background-color: #084d98;
+    color: white;
+    box-shadow: 3px 3px 8px silver;
+}
+main > #esse3 div.alert-info > i.material-icons {
+    float: left;
+    margin-left: -1em;
+    margin-right: 0.5em;
 }

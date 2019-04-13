@@ -68,5 +68,5 @@ div.masthead_menu_body li a {
   border: none;
 }
 .masthead_menu_body > ul > li.has-children li > a {
-  margin-left: 2em;
+  padding-left: 2em;
 }
