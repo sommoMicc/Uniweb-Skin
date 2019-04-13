@@ -1,5 +1,5 @@
 # Only build tags
-if: release IS present
+if: tag = "release"
 
 language: node_js
 sudo: true
@@ -22,4 +22,3 @@ deploy:
   on:
     repo: sommoMicc/Uniweb-Skin
 
-    
