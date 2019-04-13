@@ -1,3 +1,6 @@
+# Only build tags
+if: release IS present
+
 language: node_js
 sudo: true
 os:
