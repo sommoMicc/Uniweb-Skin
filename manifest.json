@@ -2,13 +2,13 @@
   "manifest_version": 2,
 
   "name": "Uniweb Skin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Skin per uniweb",
   "icons": {
     "128": "assets/icona_uniweb_skin.png" 
   },
   "content_scripts": [{
-    "css": ["css/styles.css"],
+    "css": ["css/styles.css","css/colors.css"],
     "js": ["js/jquery.js","js/content.js"],
     "matches": ["https://uniweb.unipd.it/*"]
   }]

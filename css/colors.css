@@ -1,0 +1,52 @@
+#esse3 .table-1,
+table.detail_table {
+  border-color: silver !important;
+}
+table.detail_table tr:nth-child(even) td,
+#esse3 .table-1 tr:nth-child(even) td {
+  background: #eee;
+}
+table.detail_table tr:nth-child(odd) td,
+#esse3 .table-1 tr:nth-child(odd) td {
+  background: #fff;
+}
+div.masthead_menu_body > ul > li > a,
+div.masthead_menu_body > ul > li.has-children > a {
+  border-left-color: #9C0014;
+}
+div.masthead_menu_body > ul > li > a:hover,
+li.has-children > ul > li > a:hover {
+    background: #dddddd;
+}
+/* Coloro differentemente i sottomenù */
+li.has-children > ul.is-open {
+    background: white;
+}
+/* Cambio il colore della pagina e poi del menu */
+body {
+    background: #F8F9FA;
+}
+nav.masthead_menu {
+    background: #e9e9e9!important;
+}
+div.masthead_usermenu,
+.masthead_menu_body > ul > li  {
+  background: white!important;
+}
+div.masthead_menu_body li a {
+  border: none;
+  color: #444;
+}
+ul.masthead_menu_lang a.is-active,
+div.masthead_menu_body ul > li.is-open > a {
+  color: black;
+}
+ul.masthead_menu_lang a:not(.is-active) {
+  color: #444;
+}
+.masthead_menu_body > ul > li.has-children li > a {
+  margin-left: 2em;
+}
+a#chiudi-menu-principale.masthead_menu_close {
+  color: black;
+}

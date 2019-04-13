@@ -28,7 +28,7 @@
 /* Cambio l'orribile grafica delle tabelle */
 #esse3 .table-1,
 table.detail_table {
-  border: solid 1px silver !important;
+  border: solid 1px !important;
 }
 #esse3 .table-1 td,
 #esse3 .table-1 th,
@@ -40,15 +40,6 @@ table.detail_table th,
 #esse3 .table-1 th {
   padding-bottom: 10px!important;
 }
-table.detail_table tr:nth-child(even) td,
-#esse3 .table-1 tr:nth-child(even) td {
-  background: #eee;
-}
-table.detail_table tr:nth-child(odd) td,
-#esse3 .table-1 tr:nth-child(odd) td {
-  background: #fff;
-}
-
 /* 
  * Menù
 */
@@ -63,42 +54,19 @@ div.masthead_menu_body > ul > li {
 }
 div.masthead_menu_body > ul > li > a,
 div.masthead_menu_body > ul > li.has-children > a {
-  border-left: 8px solid #9C0014;
+  border-left: 8px solid;
   padding-left: 8px;
   padding-right: 0;
   margin-right: none!important;
 }
-div.masthead_menu_body > ul > li > a:hover {
-  background: #dddddd;
-}
 /* Coloro differentemente i sottomenù */
 li.has-children > ul.is-open {
-  background: white;
   padding-left: 10px
 }
-/* Cambio il colore della pagina e poi del menu */
-body {
-  background: #F8F9FA;
-}
-nav.masthead_menu,
-div.masthead_usermenu,
-.masthead_menu_body > ul > li  {
-  background: white!important;
-}
+
 div.masthead_menu_body li a {
   border: none;
-  color: #444;
-}
-ul.masthead_menu_lang a.is-active,
-div.masthead_menu_body ul > li.is-open > a {
-  color: black;
-}
-ul.masthead_menu_lang a:not(.is-active) {
-  color: #444;
 }
 .masthead_menu_body > ul > li.has-children li > a {
   margin-left: 2em;
-}
-a#chiudi-menu-principale.masthead_menu_close {
-  color: black;
 }
