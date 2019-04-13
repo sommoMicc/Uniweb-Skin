@@ -13,6 +13,7 @@ script:
 
 before_deploy:
   - mv build/uniweb*.xpi build/uniweb_skin-latest.xpi
+  - ls
 
 deploy:
   provider: pages
