@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Uniweb Skin",
-  "version": "1.1.2g",
+  "version": "1.1.2h",
   "description": "Skin per uniweb",
   "icons": {
     "128": "assets/icona_uniweb_skin.png" 
