@@ -21,6 +21,8 @@ deploy:
   github_token: $GITHUB_TOKEN 
   keep_history: true
   repo: sommoMicc/sommoMicc.github.io
+  local_dir: uniweb_skin/build/
+  target_branch: master
   on:
     tags: true
 
