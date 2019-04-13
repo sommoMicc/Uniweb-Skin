@@ -11,16 +11,14 @@ script:
 - web-ext sign --api-key=$FIREFOX_API_KEY --api-secret=$FIREFOX_API_SECRET -a build/
 
 before_deploy:
-  - export RELEASE_PKG_FILE=$(ls build/*.deb)
-  - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
+  - mv build/uniweb*.xpi build/uniweb_skin-latest.xpi
 
 deploy:
-  provider: releases
-  api_key:
-    secure: oEFkBQT0sIPkZw1GjZ++2nmJWhlR4m+SI1WJhv1bOQUo5Mjq36SL7QmKHbbZUszN9xLqp56y3Wpg1w1DANN4+8KoBshlw87gOvFORBVv/mTTkM1YYuxU7mM+NpWQHThDefgrrCV41x6VdcmOV6YGZ9EtYdwBTZbFb0H78VJ+ku2P9L/bKWLDThOIIGgmUOqj+pkL6LPUe+dWyyvwn8jw5Yx4pN3PCts0dkGDTG+8bTvjs+SgYQAHvb8k69czNQWh4SZEvvMxiZD+y2xSc8ecTv5pGoRJFIawn0KiVyQCpNBsf8oCHXCZfjVk7RG43nISuJNwNC+MYWXxIRivpd2c3QOcrceBkVktT63l/8hWYi+Roni/SZgJyrWAY5VnDOvcSSjGyhbQxMF89qR/2RY4qeKM6B3kSc0GyhRO++4YqLi+9EovWjSm+pexLA0aaj2KpUDtOvClZ1DsDHSRhQXyOBYU5WefOv9ejjuE6VhBNbnE+S7f2E7I7SWcVFiswVr/WqSnguJkw+7SXJXjFNOxXuPxs28nlLaErL6QBlF0J8PafeIF2jZo38cyJDIq1kaOdPRLZiW0NyKIpVLiYFDkFEvuBwmc6+6J6ttTnOroKkG6UuzkVN/T0dwz0tf3IcPpPxvcO7AkmJDays0RqtLu/js30qiyagvxfPEbrrOKEUg=
-  file_glob: true
-  file: "${RELEASE_PKG_FILE}"
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+
   on:
-    repo: sommoMicc/Uniweb-Skin
     tags: true
 
