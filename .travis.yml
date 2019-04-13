@@ -23,4 +23,3 @@ deploy:
   target_branch: master
   on:
     tags: true
-
